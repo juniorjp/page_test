@@ -2,6 +2,10 @@
 # Some filenames like deploy may pick up multiple schemas.
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 name: Deploy
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 on: [push]
 
